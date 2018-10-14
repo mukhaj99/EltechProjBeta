@@ -16,8 +16,6 @@
             android:id="@+id/relativelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/layout1"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -25,11 +23,15 @@
             android:orientation="vertical"
             android:visibility="visible">
 
+            <include layout="@layout/lesson_tag" />
 
             <TextView
                 android:id="@+id/studyObj1"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/lessonType"
+                android:layout_alignParentStart="true"
                 android:text="@string/Lesson_name"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/headline" />
@@ -75,8 +77,6 @@
             android:id="@+id/relativelayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/relativelayout"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -84,7 +84,10 @@
             android:orientation="vertical"
             android:visibility="invisible">
 
+            <include layout="@layout/lesson_tag" />
+
             <TextView
+                android:layout_below="@+id/lessonType"
                 android:id="@+id/studyObj2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,8 +136,6 @@
             android:id="@+id/relativelayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/relativelayout2"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -143,6 +144,7 @@
             android:visibility="invisible">
 
             <TextView
+                android:layout_below="@+id/lessonType"
                 android:id="@+id/studyObj3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -191,8 +193,6 @@
             android:id="@+id/relativelayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/relativelayout3"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -201,6 +201,7 @@
             android:visibility="invisible">
 
             <TextView
+                android:layout_below="@+id/lessonType"
                 android:id="@+id/studyObj4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -249,8 +250,6 @@
             android:id="@+id/relativelayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/relativelayout4"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -259,6 +258,7 @@
             android:visibility="invisible">
 
             <TextView
+                android:layout_below="@+id/lessonType"
                 android:id="@+id/studyObj5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -307,8 +307,6 @@
             android:id="@+id/relativelayout6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/relativelayout5"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -317,6 +315,7 @@
             android:visibility="invisible">
 
             <TextView
+                android:layout_below="@+id/lessonType"
                 android:id="@+id/studyObj6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

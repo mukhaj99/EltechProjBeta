@@ -22,4 +22,8 @@
         <item>Нечетная неделя</item>
     </string-array>
 
+    <string name="Practice">Практика</string>
+    <string name="Lecture">Лекция</string>
+    <string name="Lab">Лабораторная</string>
+
 </resources>
