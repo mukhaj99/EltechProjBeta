@@ -23,14 +23,20 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <include layout="@layout/lesson_tag" />
+            <TextView
+                android:id="@+id/lessonType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/studyObj1"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/lessonType"
+                android:layout_below="@+id/lessonType1"
                 android:layout_alignParentStart="true"
                 android:text="@string/Lesson_name"
                 android:textColor="@color/textColor"
@@ -84,10 +90,17 @@
             android:orientation="vertical"
             android:visibility="invisible">
 
-            <include layout="@layout/lesson_tag" />
+            <TextView
+                android:id="@+id/lessonType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_below="@+id/lessonType"
+                android:layout_below="@+id/lessonType2"
                 android:id="@+id/studyObj2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -144,7 +157,16 @@
             android:visibility="invisible">
 
             <TextView
-                android:layout_below="@+id/lessonType"
+                android:id="@+id/lessonType3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/lessonType3"
                 android:id="@+id/studyObj3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +223,16 @@
             android:visibility="invisible">
 
             <TextView
-                android:layout_below="@+id/lessonType"
+                android:id="@+id/lessonType4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/lessonType4"
                 android:id="@+id/studyObj4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,7 +289,16 @@
             android:visibility="invisible">
 
             <TextView
-                android:layout_below="@+id/lessonType"
+                android:id="@+id/lessonType5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/lessonType5"
                 android:id="@+id/studyObj5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -315,7 +355,16 @@
             android:visibility="invisible">
 
             <TextView
-                android:layout_below="@+id/lessonType"
+                android:id="@+id/lessonType6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_bg"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/lessonType6"
                 android:id="@+id/studyObj6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
