@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Eltech</string>
+    <string name="news_button1">Новости</string>
+    <string name="schedule">Расписание</string>
+    <string name="Lesson_name">Название пары</string>
+    <string name="Lecture_hall">Аудитория</string>
+    <string name="Teacher">Преподаватель</string>
+    <string name="Time">Время</string>
+    <string name="Number">№ пары</string>
+
+    <string name="monday">Пн</string>
+    <string name="tuesday">Вт</string>
+    <string name="wednesday">Ср</string>
+    <string name="thursday">Чт</string>
+    <string name="friday">Пт</string>
+    <string name="saturday">Сб</string>
+    <string name="Week1">Нечетная неделя</string>
+    <string name="Week2">Четная неделя</string>
+
+    <string-array name="Weeks">
+        <item>Четная неделя</item>
+        <item>Нечетная неделя</item>
+    </string-array>
+
+</resources>
