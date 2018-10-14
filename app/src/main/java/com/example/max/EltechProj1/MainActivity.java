@@ -21,12 +21,13 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
-
+//проверка git Yachiman
 public class MainActivity extends AppCompatActivity {
 
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+    private DrawerLayout drawerLayout_9;//by Yachiman
     private ViewPager viewPager;
     private TabLayout tabLayout;
     int currentDay = -1;    //Flag for onItemSelectedListener and global var for current day in TimeTable
