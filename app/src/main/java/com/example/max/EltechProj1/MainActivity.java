@@ -22,12 +22,13 @@ import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
 
-
+//проверка git by
 public class MainActivity extends AppCompatActivity {
 
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+    private DrawerLayout drawerLayout_9;//by
     private DrawerLayout drawerLayout_b0sya; //Проверка гитха: b0sya
     private ViewPager viewPager;
     private TabLayout tabLayout;
