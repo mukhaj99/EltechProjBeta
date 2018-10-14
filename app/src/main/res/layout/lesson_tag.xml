@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/lessonType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lesson_bg"
+        android:text="@string/Practice"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</merge>
