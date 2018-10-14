@@ -22,11 +22,13 @@ import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+    private DrawerLayout drawerLayout_b0sya; //Проверка гитха: b0sya
     private ViewPager viewPager;
     private TabLayout tabLayout;
     int currentDay = -1;    //Flag for onItemSelectedListener and global var for current day in TimeTable
