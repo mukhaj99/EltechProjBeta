@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.graphics.Color;
 import com.example.max.EltechProj1.Lecture;
 import com.example.max.EltechProj1.R;
 import com.example.max.EltechProj1.Timetable;
@@ -190,6 +190,10 @@ public class ExampleFragment extends Fragment {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());
             teacherText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetTeacher());
@@ -201,6 +205,10 @@ public class ExampleFragment extends Fragment {
         if (!arrTimeTable[numberOfDay].lessons[countLesson].GetLessons().equals("null")) {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());
@@ -213,6 +221,10 @@ public class ExampleFragment extends Fragment {
         if (!arrTimeTable[numberOfDay].lessons[countLesson].GetLessons().equals("null")) {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());
@@ -225,6 +237,10 @@ public class ExampleFragment extends Fragment {
         if (!arrTimeTable[numberOfDay].lessons[countLesson].GetLessons().equals("null")) {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());
@@ -237,6 +253,10 @@ public class ExampleFragment extends Fragment {
         if (!arrTimeTable[numberOfDay].lessons[countLesson].GetLessons().equals("null")) {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());
@@ -249,6 +269,10 @@ public class ExampleFragment extends Fragment {
         if (!arrTimeTable[numberOfDay].lessons[countLesson].GetLessons().equals("null")) {
             relativelayout[realCountLesson].setVisibility(View.VISIBLE);
 
+            if(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Практика"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg2);
+            else if (arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType().equals("Лабораторная"))
+                lessonType[realCountLesson].setBackgroundResource(R.drawable.lesson_bg3);
             lessonType[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessonsType());
             studyObjText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLessons());
             lectureHallText[realCountLesson].setText(arrTimeTable[numberOfDay].lessons[countLesson].GetLectureHall());

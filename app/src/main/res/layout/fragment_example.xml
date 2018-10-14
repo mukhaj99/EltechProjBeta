@@ -20,6 +20,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/layout_bg"
+            android:elevation="2dp"
             android:orientation="vertical"
             android:visibility="visible">
 
@@ -30,7 +31,7 @@
                 android:background="@drawable/lesson_bg"
                 android:textColor="@color/colorWhite"
                 android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/studyObj1"
@@ -65,7 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher1"
                 android:text="@string/Time"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -88,6 +90,7 @@
             android:layout_marginEnd="15dp"
             android:background="@drawable/layout_bg"
             android:orientation="vertical"
+            android:elevation="2dp"
             android:visibility="invisible">
 
             <TextView
@@ -131,7 +134,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher2"
                 android:text="@string/Time"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -154,7 +158,8 @@
             android:layout_marginEnd="15dp"
             android:background="@drawable/layout_bg"
             android:orientation="vertical"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/lessonType3"
@@ -197,7 +202,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher3"
                 android:text="@string/Time"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -220,7 +226,8 @@
             android:layout_marginEnd="15dp"
             android:background="@drawable/layout_bg"
             android:orientation="vertical"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/lessonType4"
@@ -263,7 +270,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher4"
                 android:text="@string/Time"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -286,7 +294,8 @@
             android:layout_marginEnd="15dp"
             android:background="@drawable/layout_bg"
             android:orientation="vertical"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/lessonType5"
@@ -329,6 +338,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher5"
                 android:text="@string/Time"
+                android:textSize="18sp"
                 android:textColor="@color/textColor" />
 
             <ImageView
@@ -395,6 +405,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teacher6"
                 android:text="@string/Time"
+                android:textSize="18sp"
                 android:textColor="@color/textColor" />
 
             <ImageView
