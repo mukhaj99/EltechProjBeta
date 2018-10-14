@@ -48,6 +48,10 @@ public class TabsPagerFragmentAdapter extends FragmentStatePagerAdapter{
        return ExampleFragment.newInstance(position,week);
     }
 
+    public void updateData(int week){
+        this.week = week;
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getCount() {

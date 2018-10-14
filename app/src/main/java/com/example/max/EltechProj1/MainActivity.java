@@ -63,11 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.unused_button:
+                adapter.updateData(0);
+                /*
                 adapter.setWeek(0);
+                adapter.getItem(0);*/
                 break;
             case R.id.unused_button1:
-                adapter.setWeek(1);
-                break;
+                adapter.updateData(1);
+                /*adapter.setWeek(1);
+                adapter.getItem(0);
+                */break;
         }
 
     }
