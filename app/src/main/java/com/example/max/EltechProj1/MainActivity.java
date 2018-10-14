@@ -25,6 +25,16 @@ import java.util.Calendar;
 //проверка git by
 public class MainActivity extends AppCompatActivity {
 
+//ТЕСТ ТЕСТ ТЕСТ
+
+
+    //Мое
+    //Громадное
+    //Мастер
+    //Изменение
+    int flex;
+    //Flex
+
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
