@@ -24,6 +24,13 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Мое
+    //Громадное
+    //Мастер
+    //Изменение
+    int flex;
+    //Flex
+
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
