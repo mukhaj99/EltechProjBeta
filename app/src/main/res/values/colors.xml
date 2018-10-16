@@ -11,5 +11,6 @@
     <color name="PracticeColor">#d62121</color>
     <color name="LectureColor">#2023d2</color>
     <color name="LabColor">#20d223</color>
+    <color name="DayWeekColor">#66A1D2</color>
 
 </resources>

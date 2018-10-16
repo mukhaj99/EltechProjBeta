@@ -7,8 +7,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.max.EltechProj1.adapter.TabsPagerFragmentAdapter;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private static final int LAYOUT = R.layout.activity_main;
@@ -23,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         initToolbar();
         initNavigationView();
         InitTabs();
+        SetDay(Calendar.getInstance().get(Calendar.WEEK_OF_YEAR)%2);
 
     }
 
@@ -40,16 +49,19 @@ public class MainActivity extends AppCompatActivity {
         toolbar.inflateMenu(R.menu.menu);
     }
 
-
-
     private void InitTabs() {
         ViewPager viewPager = findViewById(R.id.viewPager);
 
         adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        int setDay = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
+        if(setDay != 1){
+            viewPager.setCurrentItem(setDay-2);
+        }
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
+        adapter.updateData(Calendar.getInstance().get(Calendar.WEEK_OF_YEAR)%2);
 
     }
 
@@ -64,17 +76,50 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case R.id.unused_button:
                 adapter.updateData(0);
-                /*
-                adapter.setWeek(0);
-                adapter.getItem(0);*/
+                SetDay(0);
                 break;
             case R.id.unused_button1:
                 adapter.updateData(1);
-                /*adapter.setWeek(1);
-                adapter.getItem(0);
-                */break;
+                SetDay(1);
+                break;
         }
 
+    }
+
+    private void SetDay(int weekParity) {
+        TextView dayText = findViewById(R.id.dayText);
+
+        String dayWeek = "";
+
+        switch(Calendar.getInstance().get(Calendar.DAY_OF_WEEK)){
+            case 1:
+                dayWeek = "Вс";
+                break;
+            case 2:
+                dayWeek = "Пн";
+                break;
+            case 3:
+                dayWeek = "Вт";
+                break;
+            case 4:
+                dayWeek = "Ср";
+                break;
+            case 5:
+                dayWeek = "Чт";
+                break;
+            case 6:
+                dayWeek = "Пт";
+                break;
+            case 7:
+                dayWeek = "Сб";
+                break;
+        }
+
+
+        String date = "Сегодня "+ dayWeek + new SimpleDateFormat(" dd.MM", Locale.US).format(new Date()) +
+                " (Выбрана " + (weekParity == 0 ? "четная" : "нечетная")
+                + " неделя)";
+        dayText.setText(date);
     }
 }
 
