@@ -13,14 +13,6 @@ public class TabsPagerFragmentAdapter extends FragmentStatePagerAdapter{
     private String [] tabs;
     private int week = (Calendar.getInstance().getWeekYear()%2);
 
-    public void setWeek(int week) {
-        this.week = week;
-    }
-
-    public int getWeek() {
-        return week;
-    }
-
     public TabsPagerFragmentAdapter(FragmentManager fm) {
         super(fm);
         tabs = new String[] {
@@ -51,6 +43,11 @@ public class TabsPagerFragmentAdapter extends FragmentStatePagerAdapter{
     public void updateData(int week){
         this.week = week;
         notifyDataSetChanged();
+    }
+
+    public void updateDay(int day){
+        if(day != 1){
+        }
     }
 
     @Override
