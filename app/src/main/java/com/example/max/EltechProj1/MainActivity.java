@@ -7,12 +7,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.max.EltechProj1.adapter.TabsPagerFragmentAdapter;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -81,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.unused_button1:
                 adapter.updateData(1);
                 SetDay(1);
+                break;
+            case R.id.schedule:
                 break;
         }
 
