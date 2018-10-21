@@ -1,25 +1,24 @@
-
 package com.example.max.EltechProj1;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Notes extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_notes);
 
-        initNavigationView();
+        TextView titText = findViewById(R.id.title);
+        titText.setText("Notes");
     }
 
-    private void initNavigationView(){
+    public void initNavigationView(){
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
     }
 
