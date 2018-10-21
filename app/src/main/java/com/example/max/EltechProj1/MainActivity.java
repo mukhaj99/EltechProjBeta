@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TabsPagerFragmentAdapter adapter;
     private TextView hacktoberfest; // #1
     private TextView hacktoberfest2; // #2
+    private TextView hacktoberfest3; // #3
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
