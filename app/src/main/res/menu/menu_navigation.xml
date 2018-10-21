@@ -18,6 +18,13 @@
         android:title="@string/notes"
         android:icon="@mipmap/ic_navigation_notes"/>
 
+    <item
+        android:id="@+id/timeToEx"
+        android:onClick="onSettingsMenuClick2"
+        android:orderInCategory="3"
+        android:title="@string/examTime"
+        android:icon="@mipmap/ic_navigation_notes"/>
+
 </group>
 
 

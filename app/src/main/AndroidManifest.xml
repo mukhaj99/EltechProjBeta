@@ -23,5 +23,9 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_rasp"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ExamActivity"
+            android:theme="@style/AppTheme"
+            />
     </application>
 </manifest>

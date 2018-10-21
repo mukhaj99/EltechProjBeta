@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent (this, Notes.class);
                 startActivity(intent3);
                 break;
+            case R.id.timeToEx:
+                Intent intent4 = new Intent(this, ExamActivity.class);
+                startActivity(intent4);
+                break;
         }
     }
 }

@@ -18,10 +18,6 @@ public class Notes extends MainActivity {
         titText.setText("Notes");
     }
 
-    public void initNavigationView(){
-        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
-    }
-
     public void onSettingsMenuClick2(MenuItem item) {
         int id = item.getItemId();
 
