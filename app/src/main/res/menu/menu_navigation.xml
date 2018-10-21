@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:orderInCategory="2"
-        android:id="@+id/nav_butt_timeExam"
-        android:title="@string/time_exam"
-        android:onClick="onSettingsMenuClick"
-        android:icon="@mipmap/ic_newspaper_black_24dp"/>
+<group android:checkableBehavior="single">
 
     <item
+        android:id="@+id/idschedule"
+        android:onClick="onSettingsMenuClick2"
         android:orderInCategory="1"
-        android:id="@+id/schedule"
         android:title="@string/schedule"
-        android:onClick="onSettingsMenuClick"
+        android:icon="@mipmap/ic_action_name"
         />
+
+    <item
+        android:id="@+id/idnotes"
+        android:onClick="onSettingsMenuClick2"
+        android:orderInCategory="2"
+        android:title="@string/notes"
+        android:icon="@mipmap/ic_navigation_notes"/>
+
+</group>
+
 
 </menu>

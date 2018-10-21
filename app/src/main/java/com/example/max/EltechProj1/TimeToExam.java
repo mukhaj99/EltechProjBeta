@@ -36,6 +36,7 @@ public class TimeToExam extends AsyncTask<Void, Long, Void> {
         try {
             while (subst != 0) {
                 subst = calExam.getTimeInMillis() - calToday.getTimeInMillis();
+                /*subst = getTimeInFormat(subst);*/
                 publishProgress(subst);
                 Thread.sleep(1000);
 
@@ -47,6 +48,20 @@ public class TimeToExam extends AsyncTask<Void, Long, Void> {
         return null;
     }
 
+    private String getTimeInFormat(long input) {
+        String out="";
+
+        out += input / (24*60*60*1000) + " days ";
+        input = input % (24*60*60*1000);
+        out += input / (60*60*1000) + " hours ";
+        input %= (60*60*1000);
+        out += input / (60*1000) + " minutes ";
+        input %= (60*1000);
+        out += input / (1000) + " seconds";
+
+        return out;
+    }
+
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
@@ -56,7 +71,7 @@ public class TimeToExam extends AsyncTask<Void, Long, Void> {
     @Override
     protected void onProgressUpdate(Long... values) {
         super.onProgressUpdate(values);
-        tv.setText(values[0]+"");
+        tv.setText(getTimeInFormat(values[0]));
     }
 
     private Date StringToDate(String date) {
