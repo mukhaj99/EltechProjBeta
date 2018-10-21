@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView hacktoberfest4; // #4
     private TextView hacktoberfest5; // #5
     private TextView hacktoberfest6; // #6
+    private TextView hacktoberfest7; // #7
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
