@@ -19,6 +19,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     private static final int LAYOUT = R.layout.activity_main;
     private TabsPagerFragmentAdapter adapter;
+    private TextView hacktoberfest; // #1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
